@@ -1,8 +1,8 @@
 import numpy as np
 
 def inpt(user_input = ''):
-    user_input = input()
-    if user_input == '': user_input = '0,1,2,3,4,5,6,7,8,9'
+    user_input = input('Enter 9 float or whole numbers separated by commas. Negative numbers are valid entries. If entries are insufficient, random numbers will be generated in it\'s place: ')
+    if user_input == '!0': user_input = '0,1,2,3,4,5,6,7,8,9'
     elif user_input == '!1': user_input = ',1,,-..2,,,3,,,,--4,,,,,5...,,,,,,6,,,,,,,7,,,,,,,,.-8,,,,,,,,,99-99....-...7-89'
     elif user_input == '!2': user_input = '-.2,-3.,-4.4.-4,5.,.6,7.7.7,-8-8,99.-99.7-8.9'
     elif user_input == '!3': user_input = '01,test,02,rigi.d03,4t,,5.5,6,7,,,0ds8,9sss,hello,12,13'
